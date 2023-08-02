@@ -9,8 +9,7 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
-    
-    
+        
     private lazy var backgroundImageView: UIImageView = {
         let element = UIImageView()
         element.image = UIImage(named: Constants.background)
@@ -124,7 +123,6 @@ let emptyView = UIView()
         headerStackView.addArrangedSubview(searchTextField)
         headerStackView.addArrangedSubview(searchButton)
         
-        
         mainStackView.addArrangedSubview(conditionalImageView)
         mainStackView.addArrangedSubview(tempStackView)
         
@@ -133,8 +131,6 @@ let emptyView = UIView()
         
         mainStackView.addArrangedSubview(cityLabel)
         mainStackView.addArrangedSubview(emptyView)
-        
-        
         
         tempLabel.text = "21"
         typeLabel.text = Constants.celsius
